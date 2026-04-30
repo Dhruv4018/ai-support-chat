@@ -54,7 +54,7 @@ ANSWER
             contents: prompt
         })
 
-        const response = NextResponse.json(res.text)
+        const response = NextResponse.json(res.text())
 
         response.headers.set("Access-Control-Allow-Origin", "*");
         response.headers.set("Access-Control-Allow-Methods", "POST , OPTIONS");
